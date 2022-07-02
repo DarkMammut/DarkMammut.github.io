@@ -1,0 +1,6 @@
+#top_block {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    @include center_content;
+}
