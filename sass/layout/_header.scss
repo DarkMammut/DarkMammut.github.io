@@ -1,6 +1,7 @@
 header {
     display: flex;
     width: 100%;
-    @include center_content;
+    align-items: center;
+    justify-content: center;
     background-color: $colour-white;
 }

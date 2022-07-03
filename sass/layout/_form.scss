@@ -1,6 +1,7 @@
 #location {
     display: flex;
-    @include center_content;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: $colour-gray;
     padding-top: 10px;
@@ -10,5 +11,5 @@
 input {
     background-color: transparent;
     border:none;
-    @include center_content;
+    text-align: center;
 }

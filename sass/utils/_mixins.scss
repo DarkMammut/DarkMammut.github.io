@@ -1,7 +1,6 @@
 
-@mixin center_content {
-    align-items:center;
-    justify-content: center;
-    padding-left:20px;
-    padding-right:20px;
+@mixin mobile_layout {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
 }

@@ -1,0 +1,14 @@
+#top {
+    @include mobile_layout;
+    align-items: center;
+    background-color: $colour-light-gray;
+}
+
+#mid {
+    @include mobile_layout;
+}
+
+#bottom {
+    @include mobile_layout;
+}
+

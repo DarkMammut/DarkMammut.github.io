@@ -1,0 +1,18 @@
+.card {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    &__picture {
+        height: $mobile-picture-height;
+        overflow:hidden;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+    &__label {
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+}
