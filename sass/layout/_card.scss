@@ -1,8 +1,8 @@
 .card {
     display:flex;
     flex-direction: column;
-    width: 90%;
     height: auto;
+    position:relative;
     &__picture {
         height: $mobile-picture-height;
         overflow:hidden;
