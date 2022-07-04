@@ -3,17 +3,32 @@
     flex-direction: column;
     height: auto;
     position:relative;
+    width: auto;
+    padding: 20px;
     &__picture {
         height: $mobile-picture-height;
         overflow:hidden;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        
+        & img {
+            object-fit: cover;
+            height: 100px;
+        }
     }
     &__label {
         position: absolute;
-        top: 5px;
-        right: 5px;
-        
+        top: 15px;
+        right: 15px;
+        color:$colour-white;
+        background-color: $colour-accent;
+    }
+    &__caption {
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-between;
+        align-items: center;
+        &__textarea {
+            padding:5px;
+        }
     }
 }

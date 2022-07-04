@@ -39,6 +39,7 @@ body {
 
 ol, ul {
   list-style: none;
+  padding: 0;
 }
 
 blockquote, q {
@@ -70,13 +71,8 @@ h4 {
   font-style: italic;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 .btn_purple {
-  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
   height: 40px;
   padding: 16px;
   border-radius: 50px;
@@ -142,6 +138,8 @@ input {
   flex-direction: column;
   height: auto;
   position: relative;
+  width: auto;
+  padding: 20px;
 }
 .card__picture {
   height: 100px;
@@ -149,10 +147,25 @@ input {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.card__picture img {
+  object-fit: cover;
+  height: 100px;
+}
 .card__label {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background-color: #99E2D0;
+}
+.card__caption {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__caption__textarea {
+  padding: 5px;
 }
 
 footer {
