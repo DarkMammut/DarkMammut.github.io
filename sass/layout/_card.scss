@@ -17,12 +17,13 @@
             width: 100%;
         }
     }
-    &__label {
+    &__badge {
         position: absolute;
         top: 30px;
         right: 30px;
-        color:$color-white;
+        border: solid 1px $color-green;
         background-color: $color-accent;
+        color: $color-green;
     }
     &__caption {
         display: flex;

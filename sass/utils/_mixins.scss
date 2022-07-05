@@ -1,6 +1,8 @@
 
-@mixin mobile_layout {
+@mixin mobile_layout ($color) {
     display:flex;
     flex-direction: column;
     width: 100%;
+    margin: auto;
+    background-color: $color;
 }

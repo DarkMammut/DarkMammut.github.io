@@ -1,10 +1,12 @@
 .box {
     display:flex;
     flex-direction: initial;
-    width: 100%;
+    width: 90%;
     align-items: center;
     justify-items: center;
     margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     &__button {
         position: relative;
         border: solid 1px black;
@@ -17,6 +19,9 @@
         text-decoration: none;
         color:$color-black;
         background-color: $color-light-gray;
+        & i {
+            color: $color-dark-gray;
+        }
         &__number {
             position: absolute;
             top: 22.5px;
@@ -25,7 +30,6 @@
             height: 22px;
             width: 22px;
             text-align: center;
-
             color: $color-white;
             background-color: $color-primary;
         }

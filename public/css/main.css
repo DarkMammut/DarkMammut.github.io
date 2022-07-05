@@ -104,7 +104,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: gray;
+  background-color: #eaeaea;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -119,16 +119,14 @@ input {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
-  background-color: #9a9a9a;
-  width: 100%;
+  margin: auto;
+  background-color: #f6f6f6;
 }
 
 #mid {
   display: flex;
   flex-direction: column;
   width: 100%;
-  width: 90%;
   margin: auto;
   background-color: #fff;
 }
@@ -137,18 +135,19 @@ input {
   display: flex;
   flex-direction: column;
   width: 100%;
-  width: 100%;
   margin: auto;
-  background-color: #9a9a9a;
+  background-color: #f6f6f6;
 }
 
 .box {
   display: flex;
   flex-direction: initial;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-items: center;
   margin-bottom: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .box__button {
   position: relative;
@@ -161,7 +160,10 @@ input {
   border-radius: 20px;
   text-decoration: none;
   color: black;
-  background-color: #9a9a9a;
+  background-color: #f6f6f6;
+}
+.box__button i {
+  color: #7e7e7e;
 }
 .box__button__number {
   position: absolute;
@@ -205,12 +207,13 @@ input {
   object-fit: cover;
   width: 100%;
 }
-.card__label {
+.card__badge {
   position: absolute;
   top: 30px;
   right: 30px;
-  color: #fff;
+  border: solid 1px #139273;
   background-color: #99E2D0;
+  color: #139273;
 }
 .card__caption {
   display: flex;
