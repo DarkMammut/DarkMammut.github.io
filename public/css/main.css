@@ -121,6 +121,7 @@ input {
   width: 100%;
   align-items: center;
   background-color: #9a9a9a;
+  width: 100%;
 }
 
 #mid {
@@ -129,14 +130,16 @@ input {
   width: 100%;
   width: 90%;
   margin: auto;
+  background-color: #fff;
 }
 
 #bottom {
   display: flex;
   flex-direction: column;
   width: 100%;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  background-color: #9a9a9a;
 }
 
 .box {
@@ -146,38 +149,40 @@ input {
   align-items: center;
   justify-items: center;
   margin-bottom: 15px;
-  text-decoration: none;
-  color: black;
 }
 .box__button {
   position: relative;
   border: solid 1px black;
   width: 100%;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: solid 1px black;
-  margin-left: 9px;
-  border-radius: 5px;
+  padding-left: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 11px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: #9a9a9a;
 }
 .box__button__number {
   position: absolute;
-  top: 10px;
-  left: -9px;
+  top: 22.5px;
+  left: -11px;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  border: solid 1px black;
+  height: 22px;
+  width: 22px;
   text-align: center;
-  justify-content: center;
+  color: #fff;
+  background-color: #9356DC;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
@@ -187,11 +192,12 @@ input {
   position: relative;
   width: 100%;
   border-radius: 15px;
+  background-color: #fff;
 }
 .card__picture {
   height: 100px;
   overflow: hidden;
-  height: 150px;
+  height: 175px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }

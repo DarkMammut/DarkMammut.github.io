@@ -2,17 +2,20 @@
     @include mobile_layout;
     align-items: center;
     background-color: $color-light-gray;
+    width: 100%;
 }
 
 #mid {
     @include mobile_layout;
     width: 90%;
     margin: auto;
+    background-color: $color-white;
 }
 
 #bottom {
     @include mobile_layout;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    background-color: $color-light-gray;
 }
 
