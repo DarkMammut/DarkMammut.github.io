@@ -1,0 +1,19 @@
+.box {
+    display:flex;
+    flex-direction: initial;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    &__number {
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        border: solid 1px black;
+        text-align: center;
+        justify-content: center;
+    }
+    &__button {
+        border: solid 1px black;
+        padding: 5px;
+    }
+}

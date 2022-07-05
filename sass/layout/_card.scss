@@ -3,22 +3,23 @@
     flex-direction: column;
     height: auto;
     position:relative;
-    width: auto;
-    padding: 20px;
+    width:100%;
+    border-radius: 15px;
     &__picture {
         height: $mobile-picture-height;
         overflow:hidden;
+        height: 150px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         & img {
             object-fit: cover;
-            height: 100px;
+            width: 100%;
         }
     }
     &__label {
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 30px;
+        right: 30px;
         color:$colour-white;
         background-color: $colour-accent;
     }
@@ -27,8 +28,6 @@
         flex-direction: initial;
         justify-content: space-between;
         align-items: center;
-        &__textarea {
-            padding:5px;
-        }
+        padding:10px;
     }
 }

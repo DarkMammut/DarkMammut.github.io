@@ -6,9 +6,13 @@
 
 #mid {
     @include mobile_layout;
+    width: 90%;
+    margin: auto;
 }
 
 #bottom {
     @include mobile_layout;
+    width: 90%;
+    margin: auto;
 }
 
