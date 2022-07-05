@@ -1,19 +1,32 @@
 .box {
     display:flex;
     flex-direction: initial;
-    width: 90%;
+    width: 100%;
     align-items: center;
     justify-items: center;
-    &__number {
-        border-radius: 50%;
-        height: 15px;
-        width: 15px;
-        border: solid 1px black;
-        text-align: center;
-        justify-content: center;
-    }
+    margin-bottom: 15px;
+    text-decoration: none;
+    color:$color-black;
     &__button {
+        position: relative;
         border: solid 1px black;
-        padding: 5px;
+        width: 100%;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: solid 1px black;
+        margin-left: 9px;
+        border-radius: 5px;
+        &__number {
+            position: absolute;
+            top: 10px;
+            left: -9px;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            border: solid 1px black;
+            text-align: center;
+            justify-content: center;
+        }
     }
 }
