@@ -1,12 +1,11 @@
-.btn_purple {
+.btn {
     background-image: linear-gradient(to left top, $color-primary, $color-secondary);
-    height: 40px;
-    padding: 16px;
+    height: 50px;
+    width: 210px;
     border-radius: 50px;
-    border: 0px;
+    border:none;
     color: white;
-    white-space: nowrap;
-    line-height: 13.3px;
     cursor: pointer;
-    
+    font-size:100%;
+    margin-bottom: 50px;
 }

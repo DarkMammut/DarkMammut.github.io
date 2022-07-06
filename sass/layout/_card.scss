@@ -6,6 +6,7 @@
     width:100%;
     border-radius: 15px;
     background-color: $color-white;
+    margin-bottom: 20px;
     &__picture {
         height: $mobile-picture-height;
         overflow:hidden;
@@ -19,17 +20,29 @@
     }
     &__badge {
         position: absolute;
-        top: 30px;
-        right: 30px;
-        border: solid 1px $color-green;
+        top: 15px;
+        right: 15px;
         background-color: $color-accent;
         color: $color-green;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 80%;
+        font-weight: bold;
+        border-radius: 2px;
     }
     &__caption {
         display: flex;
         flex-direction: initial;
         justify-content: space-between;
         align-items: center;
-        padding:10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 15px;
+        & i {
+            font-size: 150%;
+        }
     }
 }

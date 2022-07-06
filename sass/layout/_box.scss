@@ -4,12 +4,12 @@
     width: 90%;
     align-items: center;
     justify-items: center;
+    margin-top: 10px;
     margin-bottom: 15px;
     margin-left: 5%;
     margin-right: 5%;
     &__button {
         position: relative;
-        border: solid 1px black;
         width: 100%;
         padding-left: 40px;
         padding-top: 25px;
@@ -32,6 +32,12 @@
             text-align: center;
             color: $color-white;
             background-color: $color-primary;
+        }
+    }
+    & :hover {
+        background-color: $color-light-purple;
+        i {
+            color: $color-primary;
         }
     }
 }

@@ -63,15 +63,22 @@ body {
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
+  font-size: 180%;
 }
 
 h2 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -79,16 +86,16 @@ h4 {
   font-style: italic;
 }
 
-.btn_purple {
+.btn {
   background-image: linear-gradient(to left top, #9356DC, #FF79DA);
-  height: 40px;
-  padding: 16px;
+  height: 50px;
+  width: 210px;
   border-radius: 50px;
-  border: 0px;
+  border: none;
   color: white;
-  white-space: nowrap;
-  line-height: 13.3px;
   cursor: pointer;
+  font-size: 100%;
+  margin-bottom: 50px;
 }
 
 header {
@@ -97,6 +104,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  height: 65px;
 }
 
 #location {
@@ -113,6 +121,10 @@ input {
   background-color: transparent;
   border: none;
   text-align: center;
+  font-weight: bold;
+  font-size: 90%;
+  height: 30px;
+  width: 140px;
 }
 
 #top {
@@ -121,6 +133,7 @@ input {
   width: 100%;
   margin: auto;
   background-color: #f6f6f6;
+  align-items: center;
 }
 
 #mid {
@@ -139,19 +152,27 @@ input {
   background-color: #f6f6f6;
 }
 
+.titles {
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
 .box {
   display: flex;
   flex-direction: initial;
   width: 90%;
   align-items: center;
   justify-items: center;
+  margin-top: 10px;
   margin-bottom: 15px;
   margin-left: 5%;
   margin-right: 5%;
 }
 .box__button {
   position: relative;
-  border: solid 1px black;
   width: 100%;
   padding-left: 40px;
   padding-top: 25px;
@@ -176,12 +197,17 @@ input {
   color: #fff;
   background-color: #9356DC;
 }
+.box :hover {
+  background-color: #f5edff;
+}
+.box :hover i {
+  color: #9356DC;
+}
 
 .container {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -195,6 +221,7 @@ input {
   width: 100%;
   border-radius: 15px;
   background-color: #fff;
+  margin-bottom: 20px;
 }
 .card__picture {
   height: 100px;
@@ -209,18 +236,30 @@ input {
 }
 .card__badge {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  border: solid 1px #139273;
+  top: 15px;
+  right: 15px;
   background-color: #99E2D0;
   color: #139273;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 80%;
+  font-weight: bold;
+  border-radius: 2px;
 }
 .card__caption {
   display: flex;
   flex-direction: initial;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 15px;
+}
+.card__caption i {
+  font-size: 150%;
 }
 
 footer {

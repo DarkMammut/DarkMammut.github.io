@@ -4,15 +4,22 @@ body{
 
 h1 {
   font-family: 'Shrikhand', cursive;
-  font-style: italic;
+  font-size: 180%;
 }
 
 h2 {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 110%;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h4 {
