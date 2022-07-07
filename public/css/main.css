@@ -302,7 +302,6 @@ footer ul li a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  justify-content: center;
 }
 .menu__container__card {
   display: flex;
