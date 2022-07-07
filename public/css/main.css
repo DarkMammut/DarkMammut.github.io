@@ -106,6 +106,7 @@ header {
   justify-content: center;
   background-color: #fff;
   height: 65px;
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 
 #location {
@@ -183,6 +184,7 @@ input {
   text-decoration: none;
   color: #353535;
   background-color: #f6f6f6;
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 .box__button i {
   color: #7e7e7e;
@@ -223,6 +225,7 @@ input {
   border-radius: 15px;
   background-color: #fff;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 .card__picture {
   height: 100px;
@@ -254,10 +257,29 @@ input {
   flex-direction: initial;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 30px;
   padding-left: 15px;
+}
+.card__caption__heart {
+  height: 100%;
+}
+.card__caption__heart i {
+  position: absolute;
+  font-size: 150%;
+}
+.card__caption__heart i:nth-child(1) {
+  color: #9356DC;
+}
+.card__caption__heart i:nth-child(2) {
+  color: #353535;
+  background-color: #fff;
+}
+.card__caption__heart i:nth-child(2):hover {
+  display: none;
+  cursor: pointer;
 }
 
 footer {
