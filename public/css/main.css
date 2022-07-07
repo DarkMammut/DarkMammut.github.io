@@ -39,7 +39,6 @@ body {
 
 ol, ul {
   list-style: none;
-  padding: 0;
 }
 
 blockquote, q {
@@ -83,7 +82,9 @@ h3 {
 
 h4 {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 120%;
 }
 
 .btn {
@@ -180,7 +181,7 @@ input {
   margin-left: 11px;
   border-radius: 20px;
   text-decoration: none;
-  color: black;
+  color: #353535;
   background-color: #f6f6f6;
 }
 .box__button i {
@@ -259,7 +260,12 @@ input {
   padding-left: 15px;
 }
 .card__caption i {
+  color: transparent;
+  border: 0.5px solid #353535;
   font-size: 150%;
+}
+.card__caption i:hover, .card__caption i :active {
+  color: #99E2D0;
 }
 
 footer {
@@ -267,6 +273,21 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: black;
+  background-color: #353535;
+  color: #fff;
+}
+footer ul {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+footer ul li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+footer ul li i {
+  margin-right: 10px;
+}
+footer ul li a {
+  text-decoration: none;
   color: #fff;
 }/*# sourceMappingURL=main.css.map */

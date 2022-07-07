@@ -42,7 +42,13 @@
         padding-right: 30px;
         padding-left: 15px;
         & i {
+            color: transparent;
+            border: 0.5px solid $color-black;
             font-size: 150%;
+            
+            &:hover,:active {
+                color: $color-accent;
+            }
         }
     }
 }
