@@ -7,7 +7,7 @@
     background-color: $color;
 }
 
-@mixin clickable_heart ($top, $right){
+@mixin clickable_heart ($top, $right, $background-color: $color-white){
             height: 100%;
             & i {
                 position: absolute;
@@ -19,8 +19,8 @@
                 }
                 &:nth-child(2) {
                     color:$color-black;
-                    background-color: $color-white;
-                    &:hover {
+                    background-color: $background-color;
+                    &:hover,:visited {
                         display: none;
                         cursor: pointer;
                     }

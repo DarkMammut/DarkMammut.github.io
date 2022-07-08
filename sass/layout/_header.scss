@@ -12,6 +12,9 @@ header {
         left: 25px;
         top: 25px;
         font-size: 130%;
+        &:visited {
+            color: black;
+        }
     }
 
 }

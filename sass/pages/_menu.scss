@@ -19,7 +19,7 @@
             position: relative;
 
             &__heart {
-                @include clickable_heart ($top:0px, $right:30px);
+                @include clickable_heart ($top: 0px, $right: 30px, $background-color: $color-light-gray);
             }
         }
         &__card {
@@ -41,8 +41,8 @@
         box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
         &__textarea {
             line-height: 1.5;
-            width: 85%;
             text-overflow: ellipsis;
+            width: 85%;
             &__title {
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
@@ -51,6 +51,11 @@
         &__price {
             width: 15%;
             font-weight: bold;
+            &:hover {
+                .menu__container__card__validation {
+                    width: 15%;
+                }
+            }
         }
         &__validation {
             width: 0%;

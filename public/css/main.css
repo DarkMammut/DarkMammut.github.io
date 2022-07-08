@@ -115,6 +115,9 @@ header i {
   top: 25px;
   font-size: 130%;
 }
+header i:visited {
+  color: black;
+}
 
 #location {
   display: flex;
@@ -286,7 +289,7 @@ input {
   color: #353535;
   background-color: #fff;
 }
-.card__caption__heart i:nth-child(2):hover {
+.card__caption__heart i:nth-child(2):hover, .card__caption__heart i:nth-child(2) :visited {
   display: none;
   cursor: pointer;
 }
@@ -351,9 +354,9 @@ footer ul li a {
 }
 .menu__container__header__heart i:nth-child(2) {
   color: #353535;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
-.menu__container__header__heart i:nth-child(2):hover {
+.menu__container__header__heart i:nth-child(2):hover, .menu__container__header__heart i:nth-child(2) :visited {
   display: none;
   cursor: pointer;
 }
@@ -377,8 +380,8 @@ footer ul li a {
 }
 .menu__container__card__textarea {
   line-height: 1.5;
-  width: 85%;
   text-overflow: ellipsis;
+  width: 85%;
 }
 .menu__container__card__textarea__title {
   font-family: "Roboto", sans-serif;
@@ -387,6 +390,9 @@ footer ul li a {
 .menu__container__card__price {
   width: 15%;
   font-weight: bold;
+}
+.menu__container__card__price:hover .menu__container__card__validation {
+  width: 15%;
 }
 .menu__container__card__validation {
   width: 0%;
