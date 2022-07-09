@@ -20,7 +20,7 @@
                 &:nth-child(2) {
                     color:$color-black;
                     background-color: $background-color;
-                    &:hover,:visited {
+                    &:visited {
                         display: none;
                         cursor: pointer;
                     }

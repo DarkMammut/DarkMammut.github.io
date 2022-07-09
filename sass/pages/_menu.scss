@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
     &__picture {
         width: 100%;
         height: 200px;
@@ -12,8 +13,8 @@
     }
     &__container {
         background-color: $color-light-gray;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
         width: 100%;
         &__header {
             position: relative;
@@ -23,48 +24,44 @@
             }
         }
         &__card {
-        display: flex;
-        flex-direction: initial;
-        width: 90%;
-        padding-left: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-right: 0;
-        margin-left: 11px;
-        margin-bottom: 15px;
-        border-radius: 20px;
-        text-decoration: none;
-        color:$color-black;
-        background-color: $color-white;
-        align-items: center;
-        overflow: hidden;
-        box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
-        &__textarea {
-            line-height: 1.5;
-            text-overflow: ellipsis;
-            width: 85%;
-            &__title {
-                font-family: 'Roboto', sans-serif;
-                font-weight: bold;
-            }
-        }
-        &__price {
-            width: 15%;
-            font-weight: bold;
-            &:hover {
-                .menu__container__card__validation {
-                    width: 15%;
+            display: flex;
+            flex-direction: initial;
+            width: 90%;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            color:$color-black;
+            background-color: $color-white;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
+            &__textarea {
+                width: 70%;
+                line-height: 1.5;
+                text-overflow: ellipsis;
+                padding-left: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                &__title {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
                 }
             }
-        }
-        &__validation {
-            width: 0%;
-            background-color: $color-accent;
-            & i {
-                color: $color-white;
-                background-color: transparent;
+            &__price {
+                width: 15%;
+                font-weight: bold;
             }
-        }
+            &__validation {
+                width: 15%;
+                background-color: $color-accent;
+                & i {
+                    color: $color-white;
+                    background-color: transparent;
+                }
+            }
         }
     }
 }

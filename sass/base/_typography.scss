@@ -13,6 +13,7 @@ h2 {
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 h3 {
@@ -27,4 +28,18 @@ h4 {
   margin-left: 20px;
   margin-top: 30px;
   font-size: 120%;
+}
+
+.menu h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 170%;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.menu h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
