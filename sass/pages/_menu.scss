@@ -41,6 +41,7 @@
                 width: 70%;
                 line-height: 1.5;
                 text-overflow: ellipsis;
+                white-space: nowrap;
                 padding-left: 15px;
                 padding-top: 15px;
                 padding-bottom: 15px;
@@ -53,7 +54,8 @@
                 width: 10%;
                 font-weight: bold;
                 padding-right: 15px;
-                padding-bottom: 0;
+                padding-bottom: 20px;
+                align-self: flex-end;
             }
             &__validation {
                 width: 20%;

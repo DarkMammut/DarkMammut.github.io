@@ -395,6 +395,7 @@ footer ul li a {
   width: 70%;
   line-height: 1.5;
   text-overflow: ellipsis;
+  white-space: nowrap;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -407,7 +408,8 @@ footer ul li a {
   width: 10%;
   font-weight: bold;
   padding-right: 15px;
-  padding-bottom: 0;
+  padding-bottom: 20px;
+  align-self: flex-end;
 }
 .menu__container__card__validation {
   width: 20%;
