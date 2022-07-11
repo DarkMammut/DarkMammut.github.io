@@ -416,6 +416,8 @@ footer ul li a {
 }
 .menu__container__card__textarea {
   width: 70%;
+  max-width: 70%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
