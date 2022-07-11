@@ -1,5 +1,9 @@
 body {
     width: 100%;
+	@include desktop {
+		width: 992px;
+		margin: auto;
+	}
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

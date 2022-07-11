@@ -1,6 +1,12 @@
 body {
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  body {
+    width: 992px;
+    margin: auto;
+  }
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -115,6 +121,8 @@ h5 {
   color: white;
   cursor: pointer;
   font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
@@ -166,6 +174,15 @@ input {
   margin: auto;
   background-color: #f6f6f6;
   align-items: center;
+}
+@media screen and (min-width: 992px) {
+  #top {
+    display: flex;
+    flex-direction: initial;
+    width: 100%;
+    margin: auto;
+    background-color: #f6f6f6;
+  }
 }
 
 #mid {
@@ -253,6 +270,15 @@ input {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: initial;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+  }
 }
 
 .card {
@@ -369,6 +395,9 @@ footer ul li a {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+.menu__container ul {
+  margin-bottom: 20px;
+}
 .menu__container__header {
   position: relative;
 }
@@ -418,14 +447,16 @@ footer ul li a {
   display: flex;
   flex-direction: column;
   flex: 6;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   line-height: 1.5;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   /*animation: left-animate 1s ease infinite alternate;*/
+}
+.menu__container__card__textarea span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__container__card__price {
   display: flex;

@@ -1,6 +1,9 @@
 #top {
     @include mobile_layout ($color-light-gray);
-    align-items: center
+    align-items: center;
+    @include desktop {
+        @include desktop-layout($color-light-gray);
+    }
 }
 
 #mid {
