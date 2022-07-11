@@ -1,0 +1,25 @@
+
+@keyframes left-animate {
+    0% {
+        transform: scaleX(120);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+@keyframes center-animate {
+    0% {
+        transform: translateX(140px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+@keyframes right-animate {
+    0% {
+        transform: translateX(140px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}

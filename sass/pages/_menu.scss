@@ -23,15 +23,16 @@
             }
         }
         &__title {
-            margin-left: 20px;
             width: 45px;
             border-bottom: 3px solid $color-accent;
             margin-bottom: 15px;
             margin-top: 30px;
+            margin-left: 20px;
         }
         &__card {
             display: flex;
             flex-direction: initial;
+            overflow: hidden;
             width: 90%;
             padding-right: 0;
             margin-left: auto;
@@ -41,37 +42,37 @@
             text-decoration: none;
             color:$color-black;
             background-color: $color-white;
-            overflow: hidden;
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
             &__textarea {
-                width: 70%;
-                max-width: 70%;
-                overflow: hidden;
                 display: flex;
                 flex-direction: column;
-                line-height: 1.5;
+                flex: 6;
+                overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                line-height: 1.5;
                 padding-left: 15px;
                 padding-top: 15px;
                 padding-bottom: 15px;
-                border:1px solid red;
+                /*animation: left-animate 1s ease infinite alternate;*/
             }
             &__price {
                 display: flex;
+                flex: 1;
+                align-items: flex-end;
                 font-weight: bold;
-                padding-right: 15px;
                 padding-bottom: 20px;
-                align-self: flex-end;
-                width: 10%
+                padding-left: 10px;
+                padding-right: 10px;
+                /*animation: center-animate 1s ease infinite alternate;*/
             }
             &__validation {
                 display: flex;
-                width: 20%;
-                background-color: $color-accent;
+                flex: 2;
                 justify-content: center;
                 align-items: center;
-                transform: translatex(100%);
+                background-color: $color-accent;
+                /*animation: right-animate 1s ease infinite alternate;*/
                 & i {
                     color: $color-white;
                     background-color: transparent;
