@@ -88,6 +88,12 @@ h4 {
   font-size: 120%;
 }
 
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+}
+
 .menu h2 {
   font-family: "Shrikhand", cursive;
   font-size: 170%;
@@ -96,7 +102,6 @@ h4 {
 }
 
 .menu h3 {
-  font-family: "Roboto", sans-serif;
   font-weight: normal;
   margin-left: 20px;
   text-transform: uppercase;
@@ -125,13 +130,13 @@ header {
   height: 65px;
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
-header i {
+header a {
   position: absolute;
   left: 25px;
   top: 25px;
   font-size: 130%;
 }
-header i:visited {
+header a:visited {
   color: black;
 }
 
@@ -348,10 +353,13 @@ footer ul li a {
   width: 100%;
 }
 .menu__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
   background-color: #f6f6f6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  width: 100%;
 }
 .menu__container__header {
   position: relative;
@@ -361,7 +369,7 @@ footer ul li a {
 }
 .menu__container__header__heart i {
   position: absolute;
-  top: 0px;
+  top: 30px;
   right: 30px;
   font-size: 150%;
 }
@@ -392,30 +400,38 @@ footer ul li a {
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 .menu__container__card__textarea {
-  width: 70%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  border: 1px solid red;
 }
-.menu__container__card__textarea__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+.menu__container__card__textarea span {
+  width: 100%;
 }
 .menu__container__card__price {
-  width: 10%;
+  display: flex;
   font-weight: bold;
   padding-right: 15px;
   padding-bottom: 20px;
   align-self: flex-end;
+  width: 10%;
 }
 .menu__container__card__validation {
+  display: flex;
   width: 20%;
   background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  transform: translatex(100%);
 }
 .menu__container__card__validation i {
   color: #fff;
   background-color: transparent;
+  font-size: 150%;
 }/*# sourceMappingURL=main.css.map */
