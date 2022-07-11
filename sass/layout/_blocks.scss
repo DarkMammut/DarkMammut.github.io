@@ -5,6 +5,7 @@
 
 #mid {
     @include mobile_layout ($color-white);
+    margin-bottom: 40px;
 }
 
 #bottom {
