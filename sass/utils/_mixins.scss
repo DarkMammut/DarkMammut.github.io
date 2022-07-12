@@ -7,14 +7,6 @@
     background-color: $color;
 }
 
-@mixin tablet_layout ($color) {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-    background-color: $color;
-}
-
 @mixin desktop_layout ($color) {
     display:flex;
     flex-direction: initial;
@@ -25,7 +17,7 @@
 
 @mixin clickable_heart ($top, $right, $background-color: $color-white){
     height: 100%;
-    & i {
+     i {
         position: absolute;
         top: $top;
         right: $right;

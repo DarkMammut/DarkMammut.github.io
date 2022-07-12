@@ -23,7 +23,7 @@
 
             &__heart {
                 @include clickable_heart ($top: 30px, $right: 30px, $background-color: $color-light-gray);
-                &:visited {
+                &:active i:nth-child(2) {
                     color: $color-primary;
                     background-color: transparent;
                 }
@@ -50,20 +50,28 @@
             color:$color-black;
             background-color: $color-white;
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
+            * {
+                box-sizing: border-box;
+            }
+
             &__textarea {
-                width: 70%;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
+                flex: 1;
                 line-height: 1.5;
                 padding-left: 15px;
                 padding-top: 15px;
                 padding-bottom: 15px;
                 /*animation: left-animate 1s ease infinite alternate;*/
+                & h5, span {
+                    display: block;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 100%;
+                }
+
             }
             &__price {
                 display: flex;
-                width: 10%;
                 align-items: flex-end;
                 font-weight: bold;
                 padding-bottom: 20px;
@@ -73,7 +81,7 @@
             }
             &__validation {
                 display: flex;
-                width: 20%;
+                width: 70px !important;
                 justify-content: center;
                 align-items: center;
                 background-color: $color-accent;

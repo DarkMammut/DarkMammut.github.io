@@ -12,7 +12,7 @@ body {
    v2.0 | 20110126
    License: none (public domain)
 */
-div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -422,7 +422,7 @@ footer ul li a {
   color: #353535;
   background-color: #f6f6f6;
 }
-.menu__container__header__heart:visited {
+.menu__container__header__heart:active i:nth-child(2) {
   color: #9356DC;
   background-color: transparent;
 }
@@ -448,20 +448,26 @@ footer ul li a {
   background-color: #fff;
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
+.menu__container__card * {
+  box-sizing: border-box;
+}
 .menu__container__card__textarea {
-  width: 70%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  flex: 1;
   line-height: 1.5;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   /*animation: left-animate 1s ease infinite alternate;*/
 }
+.menu__container__card__textarea h5, .menu__container__card__textarea span {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
 .menu__container__card__price {
   display: flex;
-  width: 10%;
   align-items: flex-end;
   font-weight: bold;
   padding-bottom: 20px;
@@ -471,7 +477,7 @@ footer ul li a {
 }
 .menu__container__card__validation {
   display: flex;
-  width: 20%;
+  width: 70px !important;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
