@@ -36,10 +36,7 @@
         &:nth-child(2) {
             color:$color-black;
             background-color: $background-color;
-            &:visited {
-                display: none;
-                cursor: pointer;
-            }
+
         }
     }
 }

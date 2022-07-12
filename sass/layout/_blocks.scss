@@ -9,6 +9,11 @@
 #mid {
     @include mobile_layout ($color-white);
     margin-bottom: 40px;
+    & ul {
+        @include desktop {
+            @include desktop-layout($color-white);
+        }
+    }
 }
 
 #bottom {

@@ -23,6 +23,10 @@
 
             &__heart {
                 @include clickable_heart ($top: 30px, $right: 30px, $background-color: $color-light-gray);
+                &:visited {
+                    color: $color-primary;
+                    background-color: transparent;
+                }
             }
         }
         &__title {
@@ -47,23 +51,19 @@
             background-color: $color-white;
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
             &__textarea {
-                display: flex;
-                flex-direction: column;
-                flex: 6;
+                width: 70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
                 line-height: 1.5;
                 padding-left: 15px;
                 padding-top: 15px;
                 padding-bottom: 15px;
                 /*animation: left-animate 1s ease infinite alternate;*/
-                & span {
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                }
             }
             &__price {
                 display: flex;
-                flex: 1;
+                width: 10%;
                 align-items: flex-end;
                 font-weight: bold;
                 padding-bottom: 20px;
@@ -73,7 +73,7 @@
             }
             &__validation {
                 display: flex;
-                flex: 2;
+                width: 20%;
                 justify-content: center;
                 align-items: center;
                 background-color: $color-accent;

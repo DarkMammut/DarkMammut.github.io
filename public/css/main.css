@@ -12,7 +12,7 @@ body {
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
+div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -193,6 +193,15 @@ input {
   background-color: #fff;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 992px) {
+  #mid ul {
+    display: flex;
+    flex-direction: initial;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+  }
+}
 
 #bottom {
   display: flex;
@@ -344,10 +353,6 @@ input {
   color: #353535;
   background-color: #fff;
 }
-.card__caption__heart i:nth-child(2):visited {
-  display: none;
-  cursor: pointer;
-}
 
 footer {
   display: flex;
@@ -417,9 +422,9 @@ footer ul li a {
   color: #353535;
   background-color: #f6f6f6;
 }
-.menu__container__header__heart i:nth-child(2):visited {
-  display: none;
-  cursor: pointer;
+.menu__container__header__heart:visited {
+  color: #9356DC;
+  background-color: transparent;
 }
 .menu__container__title {
   width: 45px;
@@ -444,23 +449,19 @@ footer ul li a {
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 .menu__container__card__textarea {
-  display: flex;
-  flex-direction: column;
-  flex: 6;
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   line-height: 1.5;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   /*animation: left-animate 1s ease infinite alternate;*/
 }
-.menu__container__card__textarea span {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 .menu__container__card__price {
   display: flex;
-  flex: 1;
+  width: 10%;
   align-items: flex-end;
   font-weight: bold;
   padding-bottom: 20px;
@@ -470,7 +471,7 @@ footer ul li a {
 }
 .menu__container__card__validation {
   display: flex;
-  flex: 2;
+  width: 20%;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
