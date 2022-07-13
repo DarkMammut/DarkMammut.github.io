@@ -50,17 +50,26 @@
             color:$color-black;
             background-color: $color-white;
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
-            * {
-                box-sizing: border-box;
+            &:hover .menu__container__card__textarea {
+                animation: text-slide 700ms ease;
+            }
+
+            &:hover div {
+                transform: translatex(0);
+            }
+
+            &:hover i {
+                transform: rotate(360deg);
             }
 
             &__textarea {
                 flex: 1;
                 line-height: 1.5;
+                margin-right: -20%;
                 padding-left: 15px;
                 padding-top: 15px;
                 padding-bottom: 15px;
-                /*animation: left-animate 1s ease infinite alternate;*/
+                overflow: hidden;
                 & h5, span {
                     display: block;
                     white-space: nowrap;
@@ -75,9 +84,10 @@
                 align-items: flex-end;
                 font-weight: bold;
                 padding-bottom: 20px;
-                padding-left: 10px;
-                padding-right: 10px;
-                /*animation: center-animate 1s ease infinite alternate;*/
+                padding-left: 15px;
+                padding-right: 15px;
+                transform: translatex(120%);
+                transition-duration: 700ms;
             }
             &__validation {
                 display: flex;
@@ -85,11 +95,14 @@
                 justify-content: center;
                 align-items: center;
                 background-color: $color-accent;
-                /*animation: right-animate 1s ease infinite alternate;*/
+                transform: translatex(100%);
+                transition-duration: 700ms;
                 & i {
                     color: $color-white;
                     background-color: transparent;
                     font-size: 150%;
+                    transform: rotate(0deg);
+                    transition-duration: 700ms;
                 }
             }
         }

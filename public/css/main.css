@@ -1,13 +1,11 @@
-body {
-  width: 100%;
-}
-@media screen and (min-width: 992px) {
-  body {
-    width: 992px;
-    margin: auto;
+@keyframes left-slide {
+  0% {
+    margin-right: -20%;
+  }
+  100% {
+    margin-right: 0;
   }
 }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -62,6 +60,16 @@ table {
   border-spacing: 0;
 }
 
+body {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 992px;
+    margin: auto;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -448,16 +456,23 @@ footer ul li a {
   background-color: #fff;
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
-.menu__container__card * {
-  box-sizing: border-box;
+.menu__container__card:hover .menu__container__card__textarea {
+  animation: text-slide 700ms ease;
+}
+.menu__container__card:hover div {
+  transform: translatex(0);
+}
+.menu__container__card:hover i {
+  transform: rotate(360deg);
 }
 .menu__container__card__textarea {
   flex: 1;
   line-height: 1.5;
+  margin-right: -20%;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
-  /*animation: left-animate 1s ease infinite alternate;*/
+  overflow: hidden;
 }
 .menu__container__card__textarea h5, .menu__container__card__textarea span {
   display: block;
@@ -471,9 +486,10 @@ footer ul li a {
   align-items: flex-end;
   font-weight: bold;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  /*animation: center-animate 1s ease infinite alternate;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  transform: translatex(120%);
+  transition-duration: 700ms;
 }
 .menu__container__card__validation {
   display: flex;
@@ -481,10 +497,13 @@ footer ul li a {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  /*animation: right-animate 1s ease infinite alternate;*/
+  transform: translatex(100%);
+  transition-duration: 700ms;
 }
 .menu__container__card__validation i {
   color: #fff;
   background-color: transparent;
   font-size: 150%;
+  transform: rotate(0deg);
+  transition-duration: 700ms;
 }/*# sourceMappingURL=main.css.map */
