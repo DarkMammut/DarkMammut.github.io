@@ -457,7 +457,7 @@ footer ul li a {
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 .menu__container__card:hover .menu__container__card__textarea {
-  animation: text-slide 700ms ease;
+  animation: textleft-slide 700ms ease;
 }
 .menu__container__card:hover div {
   transform: translatex(0);
