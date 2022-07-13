@@ -6,6 +6,24 @@
     margin-right: 0;
   }
 }
+@keyframes right-slide {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: -20%;
+  }
+}
+@keyframes slides-in {
+  0% {
+    transform: translatey(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -457,7 +475,7 @@ footer ul li a {
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 .menu__container__card:hover .menu__container__card__textarea {
-  animation: textleft-slide 700ms ease;
+  animation: left-slide 700ms ease forwards;
 }
 .menu__container__card:hover div {
   transform: translatex(0);
@@ -473,6 +491,7 @@ footer ul li a {
   padding-top: 15px;
   padding-bottom: 15px;
   overflow: hidden;
+  animation: right-slide 700ms ease backwards;
 }
 .menu__container__card__textarea h5, .menu__container__card__textarea span {
   display: block;
@@ -506,4 +525,25 @@ footer ul li a {
   font-size: 150%;
   transform: rotate(0deg);
   transition-duration: 700ms;
+}
+.menu__container__card:nth-child(1) {
+  animation-name: slides-in;
+  animation-duration: 1.5s;
+  animation-delay: 200ms;
+  animation-direction: forwards;
+  animation-timing-function: ease;
+}
+.menu__container__card:nth-child(2) {
+  animation-name: slides-in;
+  animation-duration: 1.5s;
+  animation-delay: 400ms;
+  animation-direction: forwards;
+  animation-timing-function: ease;
+}
+.menu__container__card:nth-child(3) {
+  animation-name: slides-in;
+  animation-duration: 1.5s;
+  animation-delay: 600ms;
+  animation-direction: forwards;
+  animation-timing-function: ease;
 }/*# sourceMappingURL=main.css.map */

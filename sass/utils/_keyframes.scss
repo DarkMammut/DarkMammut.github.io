@@ -6,3 +6,24 @@
         margin-right: 0;
     }
 }
+
+@keyframes right-slide {
+    0% {
+        margin-right: 0;
+    }
+    100% {
+        margin-right: -20%;
+    }
+}
+
+@keyframes slides-in {
+    0% {
+        transform: translatey(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
