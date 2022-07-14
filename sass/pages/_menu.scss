@@ -22,11 +22,14 @@
             position: relative;
 
             &__heart {
-                @include clickable_heart ($top: 30px, $right: 30px, $background-color: $color-light-gray);
-                &:active i:nth-child(2) {
-                    color: $color-primary;
-                    background-color: transparent;
+                @include clickable_heart ($top: 30px, $right: 30px);
+                &:hover i:nth-child(2) {
+                    opacity: 0;
                 }
+                &:hover i:nth-child(1) {
+                    animation: pulse 300ms ease forwards;
+                }
+
             }
         }
         &__title {
