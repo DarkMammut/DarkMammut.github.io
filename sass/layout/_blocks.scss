@@ -2,7 +2,7 @@
     @include mobile_layout ($color-light-gray);
     align-items: center;
     @include desktop {
-        @include desktop-layout($color-light-gray);
+        @include desktop-layout($color-white);
     }
 }
 
@@ -12,11 +12,12 @@
     & ul {
         @include desktop {
             @include desktop-layout($color-white);
+            justify-content: space-between;
         }
     }
 }
 
 #bottom {
-    @include mobile_layout ($color-light-gray);
+    @include mobile_layout ($color-white);
 }
 

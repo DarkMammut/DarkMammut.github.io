@@ -10,6 +10,7 @@
 @mixin desktop_layout ($color) {
     display:flex;
     flex-direction: initial;
+    flex-wrap: wrap;
     width: 100%;
     margin: auto;
     background-color: $color;
