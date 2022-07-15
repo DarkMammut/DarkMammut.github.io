@@ -1,4 +1,3 @@
-
 @mixin mobile_layout ($color) {
     display:flex;
     flex-direction: column;
@@ -14,6 +13,18 @@
     width: 100%;
     margin: auto;
     background-color: $color;
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, desktop)) and (min-width: map-get($breakpoints, mobile)){
+        @content;
+    }
 }
 
 @mixin clickable_heart ($top, $right) {
@@ -33,17 +44,5 @@
             background-color: transparent;
 
         }
-    }
-}
-
-@mixin tablet {
-    @media screen and (max-width: map-get($breakpoints, desktop)) and (min-width: map-get($breakpoints, mobile)){
-        @content
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: map-get($breakpoints, desktop)){
-        @content
     }
 }

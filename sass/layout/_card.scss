@@ -47,7 +47,14 @@
         padding-right: 30px;
         padding-left: 15px;
         &__heart {
-            @include clickable_heart($top:25px, $right:30px);
+            @include clickable_heart ($top: 25px, $right: 30px);
+            &:hover i:nth-child(2) {
+                opacity: 0;
             }
+            &:hover i:nth-child(1) {
+                animation: pulse 500ms ease forwards;
+            }
+
+        }
     }
 }
