@@ -3,21 +3,30 @@
     align-items: center;
     @include desktop {
         @include desktop-layout($color-white);
+        width:100%;
     }
 }
 
 #mid {
-    @include mobile_layout ($color-white);
+    @include mobile_layout (transparent);
     margin-bottom: 40px;
+    @include desktop {
+        width: 30%;
+        background-color: $color-light-gray;
+        border-radius: 30px;
+        margin: 0;
+    }
     & ul {
-        @include desktop {
-            @include desktop-layout($color-white);
-            justify-content: space-between;
-        }
+
     }
 }
 
 #bottom {
-    @include mobile_layout ($color-white);
+    @include mobile_layout (transparent);
+    @include desktop {
+        @include desktop-layout(transparent);
+        width: 65%;
+        margin: 0;
+    }
 }
 

@@ -6,6 +6,22 @@
     background-color: $color-gray;
     padding-top: 10px;
     padding-bottom: 10px;
+    @include desktop {
+        position: fixed;
+        background-color: transparent;
+        top: 20px;
+        left: 290px;
+        & i {
+            @include desktop {
+                border-left: solid 1px $color-accent;
+                border-top: solid 1px $color-accent;
+                border-bottom: solid 1px $color-accent;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                padding: 6px;
+            }
+        }
+    }
 }
 
 input {
@@ -16,4 +32,13 @@ input {
     font-size:90%;
     height: 30px;
     width: 140px;
+    @include desktop {
+        width: 200px;
+        border-right: solid 1px $color-accent;
+        border-top: solid 1px $color-accent;
+        border-bottom: solid 1px $color-accent;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 110%;
+    }
 }
