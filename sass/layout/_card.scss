@@ -13,6 +13,9 @@
         margin-bottom: 0;
         margin-top: 30px;
     }
+    @include tablet {
+        width: 47%;
+    }
     &__picture {
         height: $mobile-picture-height;
         overflow:hidden;

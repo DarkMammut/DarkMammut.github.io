@@ -6,19 +6,30 @@
     &__picture {
         width: 100%;
         height: 200px;
+        @include desktop {
+            height: 400px;
+        }
         & img {
             object-fit: cover;
             width: 100%;
+            @include desktop {
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
         }
     }
     &__container {
         @include mobile-layout($color:$color-light-gray);
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
+        @include desktop {
+            padding-bottom: 40px;
+        }
         & ul {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             @include desktop {
                 @include desktop-layout (transparent);
+                margin-bottom: 10px;
             }
         }
         &__header {
