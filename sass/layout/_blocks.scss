@@ -4,6 +4,7 @@
     @include desktop {
         @include desktop-layout($color-white);
         width:100%;
+        margin-bottom: 40px;
     }
 }
 
@@ -15,9 +16,12 @@
         background-color: $color-light-gray;
         border-radius: 30px;
         margin: 0;
+        margin-bottom: 40px;
     }
     & ul {
-
+        @include desktop {
+            padding-top: 20px;
+        }
     }
 }
 

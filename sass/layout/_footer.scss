@@ -5,9 +5,19 @@ footer {
     width: 100%;
     background-color: $color-black;
     color: $color-white;
+    @include desktop {
+        align-items: center;
+    }
     & ul {
         margin-top: 20px;
         margin-bottom: 30px;
+        @include desktop {
+            @include desktop-layout(transparent);
+            width: 100%;
+            justify-content: space-around;
+            margin-left: 0;
+            font-size: 120%;
+        }
         & li {
             margin-left: 20px;
             margin-bottom: 10px;

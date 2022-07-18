@@ -17,6 +17,9 @@
         border-top-right-radius: 40px;
         & ul {
             margin-bottom: 20px;
+            @include desktop {
+                @include desktop-layout (transparent);
+            }
         }
         &__header {
             position: relative;
@@ -53,6 +56,9 @@
             color:$color-black;
             background-color: $color-white;
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
+            @include desktop {
+                width: 30%;
+            }
             &:hover .menu__container__card__textarea {
                 animation: left-slide 700ms ease forwards;
             }
@@ -110,7 +116,7 @@
                   animation-name: slides-in;
                   animation-duration: 1.5s;
                   animation-delay: $i * 200ms;
-                  animation-direction: forwards;
+                  animation-fill-mode: forwards;
                   animation-timing-function: ease;
                 }
               }

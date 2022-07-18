@@ -10,9 +10,9 @@ header {
     @include desktop {
         box-shadow: none;
         justify-content: inherit;
-        padding-left: 100px;
-        postion: absolute;
         font-size: 170%;
+        width: auto;
+        padding-left: 100px;
         padding-top: 20px;
     }
     & a {
