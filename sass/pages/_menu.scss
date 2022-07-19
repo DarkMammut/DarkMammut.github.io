@@ -9,8 +9,12 @@
         @include desktop {
             height: 400px;
         }
+        @include tablet {
+            height: 300px;
+        }
         & img {
             object-fit: cover;
+            object-position: center;
             width: 100%;
             @include desktop {
                 border-top-left-radius: 50px;
@@ -30,6 +34,9 @@
             @include desktop {
                 @include desktop-layout (transparent);
                 margin-bottom: 10px;
+            }
+            @include tablet {
+                @include desktop-layout (transparent);
             }
         }
         &__header {
@@ -69,6 +76,9 @@
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
             @include desktop {
                 width: 30%;
+            }
+            @include tablet {
+                width: 45%;
             }
             &:hover .menu__container__card__textarea {
                 animation: left-slide 700ms ease forwards;
@@ -131,6 +141,10 @@
                   animation-timing-function: ease;
                 }
               }
+        }
+        &__btn {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }

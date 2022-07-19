@@ -180,7 +180,7 @@ h5 {
   margin-bottom: 5px;
 }
 
-.btn {
+button {
   background-image: linear-gradient(to left top, #9356DC, #FF79DA);
   height: 50px;
   width: 220px;
@@ -195,13 +195,13 @@ h5 {
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 992px) {
-  .btn {
+  button {
     margin-top: auto;
     margin-bottom: auto;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  .btn {
+  button {
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -761,8 +761,14 @@ footer ul li a {
     height: 400px;
   }
 }
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .menu__picture {
+    height: 300px;
+  }
+}
 .menu__picture img {
   object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 @media screen and (min-width: 992px) {
@@ -795,6 +801,14 @@ footer ul li a {
     flex-wrap: wrap;
     background-color: transparent;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .menu__container ul {
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    background-color: transparent;
   }
 }
 .menu__container__header {
@@ -849,6 +863,11 @@ footer ul li a {
 @media screen and (min-width: 992px) {
   .menu__container__card {
     width: 30%;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .menu__container__card {
+    width: 45%;
   }
 }
 .menu__container__card:hover .menu__container__card__textarea {
@@ -923,4 +942,8 @@ footer ul li a {
   animation-delay: 600ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+}
+.menu__container__btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
