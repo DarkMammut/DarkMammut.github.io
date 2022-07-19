@@ -142,6 +142,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 110%;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 h4 {
@@ -940,6 +941,13 @@ footer ul li a {
   animation-name: slides-in;
   animation-duration: 1.5s;
   animation-delay: 600ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.menu__container__card:nth-child(4) {
+  animation-name: slides-in;
+  animation-duration: 1.5s;
+  animation-delay: 800ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }

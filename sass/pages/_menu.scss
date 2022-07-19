@@ -132,7 +132,7 @@
                     transition-duration: 700ms;
                 }
             }
-            @for $i from 1 through 3 {
+            @for $i from 1 through 4 {
                 &:nth-child(#{$i}){
                   animation-name: slides-in;
                   animation-duration: 1.5s;
