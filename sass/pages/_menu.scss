@@ -74,6 +74,7 @@
             color:$color-black;
             background-color: $color-white;
             box-shadow: 0px 0px 11px 2px rgb(0 0 0 /20%);
+            cursor: pointer;
             @include desktop {
                 width: 30%;
             }
@@ -136,7 +137,7 @@
                 &:nth-child(#{$i}){
                   animation-name: slides-in;
                   animation-duration: 1.5s;
-                  animation-delay: $i * 200ms;
+                  animation-delay: 3s + $i * 200ms;
                   animation-fill-mode: forwards;
                   animation-timing-function: ease;
                 }

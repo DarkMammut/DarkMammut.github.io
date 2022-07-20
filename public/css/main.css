@@ -207,6 +207,10 @@ button {
     margin-bottom: auto;
   }
 }
+button:hover {
+  background-image: linear-gradient(to left top, #a16be0, #ff93e1);
+  box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.3);
+}
 
 #frame {
   display: flex;
@@ -220,6 +224,7 @@ button {
   overflow: auto;
   background-color: #fff;
   animation: disapear 500ms ease 3s forwards;
+  pointer-events: none;
 }
 
 .lds-spinner {
@@ -860,6 +865,7 @@ footer ul li a {
   color: #353535;
   background-color: #fff;
   box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .menu__container__card {
@@ -926,28 +932,28 @@ footer ul li a {
 .menu__container__card:nth-child(1) {
   animation-name: slides-in;
   animation-duration: 1.5s;
-  animation-delay: 200ms;
+  animation-delay: 3.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
 .menu__container__card:nth-child(2) {
   animation-name: slides-in;
   animation-duration: 1.5s;
-  animation-delay: 400ms;
+  animation-delay: 3.4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
 .menu__container__card:nth-child(3) {
   animation-name: slides-in;
   animation-duration: 1.5s;
-  animation-delay: 600ms;
+  animation-delay: 3.6s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
 .menu__container__card:nth-child(4) {
   animation-name: slides-in;
   animation-duration: 1.5s;
-  animation-delay: 800ms;
+  animation-delay: 3.8s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }

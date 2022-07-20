@@ -10,6 +10,7 @@
   overflow: auto;
   background-color: $color-white;
   animation: disapear 500ms ease 3s forwards;
+  pointer-events: none;
 }
 .lds-spinner {
   color: $color-primary;
