@@ -676,6 +676,17 @@ a {
     margin: auto auto auto auto;
 }
 
+.text-mid {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.under-text-mid {
+    font-size: 20px;
+}
+
 p {
     font-size: 11px;
 }
